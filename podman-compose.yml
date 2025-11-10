@@ -5,3 +5,4 @@ services:
     build: .
     ports:
       - "4000:4000"
+    network_mode: "slirp4netns:allow_host_loopback=true"
